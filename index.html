@@ -1,53 +1,28 @@
 <!DOCTYPE html>
 <html>
-    
+
     <head>
         <title>우리 왁굳 끼리</title>
-        <strong><h1 class="see" id ="active">우리 왁굳 끼리</h1></strong>
+        <strong><div id="T"><h1><a href ="index.html" target="_blank" title="우리 왁굳 끼리"  > 우리 왁굳 끼리 </a></h1></div></strong>
         <meta charset=utf-8>
-
-        <style>
-            body{
-                margin : 0;
-            }
-            a {
-                color: black;
-                text-decoration: none;
-            }
-            .see{
-                color:gray;
-            }
-            #active{
-                color: green;
-            }
-            h1{
-                font-size: 60px;
-                text-align: center;
-                border-bottom: 1px solid black;
-                margin : 0;
-                padding: 20px;
-            }
-            ul{
-                border-right: 1px solid black;
-                width: 150px;
-                margin: 0;
-            }
-        </style>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <p>
-            
+        <div id = "grid">
+            <div id = "UI">
+            <p>
                 <ul>
-                    <li><a href ="2.html" target="_blank" title="자유게시판" class="see" > 자유게시판 </a></li>
+                    <li><a href ="1.html" target="_blank" title="배운 내용 정리"  > 배운 내용 정리 </a></li>
+                    <li><a href ="2.html" target="_blank" title="자유게시판"  > 자유게시판 </a></li>
                      <ol>
                         <li>내 글</li>
                         <li>남 글</li>
                     </ol>
-                     <li><a href ="3.html" target="_blank" title="할 일"class="see" > 할 일 </a></li>
+                     <li><a href ="3.html" target="_blank" title="할 일" > 할 일 </a></li>
                     <ol>
                         <li>오늘 할 일</li>
                         <li>내일 할 일</li>
-                    </ol>        
+                    </ol>
                 </ul>
                 <!--
                 <ul>
@@ -60,43 +35,46 @@
                     <ol>
                         <li><u>오늘 할 일</u></li>
                         <li><u>내일 할 일</u></li>
-                    </ol>        
+                    </ol>
                 </ul>
                 -->
-            
-        </p>
-        <p style="text-align: center"><iframe width="560" height="315" 
-            src="https://www.youtube.com/embed/BxzPDQzux40" 
-            title="YouTube video player" frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen></iframe> </p>
+                <input type="button" value="야간모드" onclick="document.querySelector('body').style.backgroundColor= 'black';
+                document.querySelector('body').style.color= 'white';
+                ">
+                 <input type="button" value="주간모드" onclick="document.querySelector('body').style.backgroundColor= 'white';
+                 document.querySelector('body').style.color= 'black';">
+            </p>
+         </div>
+        <div style="padding-left: 20px;" >
 
-        <p style="text-align: center"> 
-            <a href="https://www.twitch.tv/woowakgood" target="_blank" title="우왁굳의 게임방송 ~"" >
+
+            <!-- 본문 내용을 담고 있음 -->
+        <p> 
+            <a href="https://www.twitch.tv/woowakgood" target="_blank" title="우왁굳의 게임방송 ~" >
                 우왁굳의 게임 방송 <br> </a>
-                <img src="https://static.inven.co.kr/column/2017/07/12/news/i13273914079.jpg" 
+                <img src="https://static.inven.co.kr/column/2017/07/12/news/i13273914079.jpg"
                 width="50%" > <br>
                 <strong>우왁굳 <u>은신</u>이야! <br></strong>
                 style을 사용하여 css를 읽는다. <br>
-                 태그style은 선택자{ 효과:종류 }로 쓰이고 직접 태그안에는 style = "효과:종류"로 쓰인다. <br>
+                태그style은 선택자{ 효과:종류 }로 쓰이고 직접 태그안에는 style = "효과:종류"로 쓰인다. <br>
                  선택자는 여러 개가 있는데 그중 기본적인 태그를 쓰는것, class , id 순으로 중요도가 강해진다. <br>
-              
 
-            
-        </p>
-        <p>
+     </p>
+     <p>
+        <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/BxzPDQzux40"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </p>
+
+        </div>
+    </div>
+  <p>
             <div id="disqus_thread"></div>
 <script>
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() { // DON'T EDIT BELOW THIS LINE
+
+    (function() {
     var d = document, s = d.createElement('script');
     s.src = 'https://woowakgood.disqus.com/embed.js';
     s.setAttribute('data-timestamp', +new Date());
@@ -104,7 +82,7 @@
     })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-        </p>
+  </p>
     </body>
-  
+
 </html>
